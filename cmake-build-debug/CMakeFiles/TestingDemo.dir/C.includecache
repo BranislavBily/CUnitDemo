@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/branislavbily/Dev/Skola/vyska/TestingDemo/main.c
+stdio.h
+-
+minunit.h
+/Users/branislavbily/Dev/Skola/vyska/TestingDemo/minunit.h
+
+/Users/branislavbily/Dev/Skola/vyska/TestingDemo/minunit.h
+

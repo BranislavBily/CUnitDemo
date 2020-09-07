@@ -1,0 +1,3 @@
+/Users/branislavbily/Dev/Skola/vyska/TestingDemo/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/branislavbily/Dev/Skola/vyska/TestingDemo/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/branislavbily/Dev/Skola/vyska/TestingDemo/cmake-build-debug/CMakeFiles/TestingDemo.dir
