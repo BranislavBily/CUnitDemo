@@ -1,8 +1,10 @@
 #include <stdio.h>
 
 #include "minunit.h"
+#include "uloha1.h"
 
 int tests_run = 0;
+char *results [100];
 
 int foo = 7;
 int bar = 4;
@@ -17,21 +19,25 @@ static char * test_bar() {
     return 0;
 }
 
+static char * test_uloha1() {
+    int vysledok = skusam(2);
+    mu_assert("error, vysledok != 3", vysledok == 3);
+    return 0;
+}
+
 static char * all_tests() {
     mu_run_test(test_foo);
     mu_run_test(test_bar);
+    mu_run_test(test_uloha1);
     return 0;
 }
 
 int main(int argc, char **argv) {
-    char *result = all_tests();
-    if (result != 0) {
-        printf("%s\n", result);
-    }
-    else {
-        printf("ALL TESTS PASSED\n");
+    all_tests();
+    for(int i = 0; i<=tests_run; i++) {
+        if(results[i] != NULL) {
+            printf("%s\n", results[i]);
+        }
     }
     printf("Tests run: %d\n", tests_run);
-
-    return result != 0;
 }

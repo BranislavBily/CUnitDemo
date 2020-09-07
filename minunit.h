@@ -8,5 +8,9 @@
 #endif //TESTINGDEMO_MINUNIT_H
 #define mu_assert(message, test) do { if (!(test)) return message; } while (0)
 #define mu_run_test(test) do { char *message = test(); tests_run++; \
-                                if (message) return message; } while (0)
+                                if (message) {                      \
+                                results[tests_run] = message;       \
+                                }                   \
+                                } while (0)
 extern int tests_run;
+extern char *results [100];

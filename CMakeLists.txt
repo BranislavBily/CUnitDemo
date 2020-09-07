@@ -3,4 +3,4 @@ project(TestingDemo C)
 
 set(CMAKE_C_STANDARD 99)
 
-add_executable(TestingDemo main.c minunit.h)
+add_executable(TestingDemo main.c minunit.h uloha1.c uloha1.h)

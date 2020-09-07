@@ -3,4 +3,8 @@
 
 CMakeFiles/TestingDemo.dir/main.c.o: ../main.c
 CMakeFiles/TestingDemo.dir/main.c.o: ../minunit.h
+CMakeFiles/TestingDemo.dir/main.c.o: ../uloha1.h
+
+CMakeFiles/TestingDemo.dir/uloha1.c.o: ../uloha1.c
+CMakeFiles/TestingDemo.dir/uloha1.c.o: ../uloha1.h
 
